@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+        
+        header {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            height: 3em;
+            padding: 1%;
+            padding-top: 5px;
+        }
+        
+        .page {
+            text-align: center;
+            margin-top: 15%;
+            border: inset black;
+            border-style: ridge;
+            border-radius: 20px;
+            margin-right: 32%;
+            margin-left: 32%;
+            padding: 3%;
+            filter: alpha(opacity=60);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        
+        .page {
+            background-color: skyblue;
+        }
+        
+        body {
+            background-color: cadetblue;
+            background-image: "./public/images/hospital.jpg";
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>PATIENT DETAILS OF HOSPITAL</h1>
+    </header>
+    <!-- <a href="/createdb"> click me</a> -->
+    <div class="page">
+        <!-- <a href="/createemployee">click to create the table</a> -->
+        <div class="col-md-2">
+            <form action="/adddata" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" />
+                <br><br>
+                <label for="email">Disease:</label>
+                <input type="text" id="desigination" name="email" placeholder="Enter the diesease faced by patient" />
+                <!-- <br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" />
+        <br><br>
+        <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" />
+        <br><br> -->
+                <br><br>
+                <input type="submit" value="add" />
+            </form>
+        </div>
+        <div>
+
+            <a href="/showdata"> click here to showdata data</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
